@@ -124,7 +124,7 @@ main (int argc, char *argv[])
   //   create a new process for both passed commands, and connect both
   //   processes with a pipe.
   //
-  //   On POSIX, you will need the functions "fork", "exec*", "pipe" and "dup"
+  //   On POSIX, you will need the functions "fork", "exec*", "pipe" and "dup*"
   //   to accomplish this task. On Windows, you will need at least the
   //   functions "CreateProcess" and "CreatePipe".
   //
@@ -142,7 +142,7 @@ main (int argc, char *argv[])
   //
   //   An alternative command for the Windows operating system could be this:
   //
-  //     C:\> date /T | find /c /v ""
+  //     C:\> date /T ; find /c /v ""
   //     1
 
   return 0;
