@@ -1,0 +1,5 @@
+processes_pipes
+
+*.o
+*.obj
+*.exe
