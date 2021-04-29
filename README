@@ -57,13 +57,13 @@ on your choice of System, use the following functions to implement process
 creation:
 
   Windows: CreateProcess
-  POSIX: forx, exec*
+  POSIX: fork, exec*
 
 The code already implements the comprehension of the command line arguments,
 and provides your code with two arrays representing a first and a second
 command. The first element of these arrays is the program to start, and all
 further arguments are the arguments that are to be passed to the program as
-parameters. Remember that on unix, the first argument to the program executing
+parameters. Remember that on UNIX, the first argument to the program executing
 through exec is the name of the program itself. Refer to `man 3 exec` for
 details.
 
