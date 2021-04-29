@@ -7,7 +7,7 @@ OBJ = processes_pipes.obj
 all: $(BIN)
 
 $(BIN): $(OBJ)
-	link $(LFLAGS) $** /out:processes_pipe.exe
+	link $(LFLAGS) $** /out:processes_pipes.exe
 
 clean:
 	-del $(BIN) $(OBJ)
